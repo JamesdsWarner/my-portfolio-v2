@@ -45,7 +45,7 @@ export const projects = [
       techStackObjects.express,
     ],
     projectDescription:
-      'Full stack built task helper app. Users can add a sticky note, and input their task. Once completed, they can mark it as done, or delete it. Users can also change the colour of the sticky, and clear the text altogether. Users can either login/signup or continue as a guest. If logged in, users can also change their display name and email address on the edit account page.',
+      'Developed a full stack Todo app leveraging ReactJS, JavaScript and Styled Components to build the the front end, whilst using NodeJS and Express for the back end. Created a database in MongoDB connected to the back end which meant users could sign up, log in, and retain their data.',
   },
   {
     projectTitle: 'Pokedex app',
@@ -58,7 +58,7 @@ export const projects = [
     },
     techStackArr: [techStackObjects.javascript, techStackObjects.react],
     projectDescription:
-      'A catalogue showing the first 151 Pokemon, gathering data from the PokéAPI open API. Uses have the ability to search for their Pokemon of choice, as well as filtering them by their types.',
+      'Built an app that displays the first 151 Pokémon, utilising ReactJS, JavaScript, Styled Components and React Redux. Populated the app with data obtained from PokéAPI, an open RESTful API for Pokémon data.',
   },
   {
     projectTitle: 'Blog prototype',
@@ -71,6 +71,6 @@ export const projects = [
     },
     techStackArr: [techStackObjects.javascript, techStackObjects.react, techStackObjects.gatsby],
     projectDescription:
-      'A travel blog prototype. Users have the ability to browse the multiple blog posts. The admin of the blog uses Netlify CMS to make posts, adding text and images.',
+      'Created an example blog app leveraging ReactJS, JavaScript, Gatsby and Sass. Implemented an admin user interface using Netlify CMS.',
   },
 ];

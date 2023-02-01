@@ -24,12 +24,14 @@ export default function Project({ project, flexNo }) {
 
   return (
     <Styled.ProjectWrapper inView={inView} ref={ref} oddOrEven={oddOrEven}>
-      <Styled.ProjectImage
-        height="600"
-        width="600"
-        src={project.imgSrc.src}
-        alt={project.imgSrc.alt}
-      />
+      <Link target="_blank" href={project.projectUrl}>
+        <Styled.ProjectImage
+          height="600"
+          width="600"
+          src={project.imgSrc.src}
+          alt={project.imgSrc.alt}
+        />
+      </Link>
       <Styled.ProjectInfoWrapper oddOrEven={oddOrEven}>
         <Styled.ProjectTitle>{project.projectTitle}</Styled.ProjectTitle>
         <Styled.ProjectTechStackWrapper>

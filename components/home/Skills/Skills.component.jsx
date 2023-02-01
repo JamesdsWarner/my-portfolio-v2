@@ -2,25 +2,14 @@ import ParticlesBackground from '../../shared/ParticlesBackground/ParticlesBackg
 import data from '../../../data/particlesjs-stars-config';
 import { techStackObjects } from '../../../data/projects';
 import { v4 as uuidv4 } from 'uuid';
-import { useState, useEffect } from 'react';
-import useWindowSize from '../../../hooks/useWindowSize';
+import { useInView } from 'react-intersection-observer';
 import * as Styled from './Skills.styles';
 
 export default function Skills() {
-  const [particlesHeight, setParticlesHeight] = useState();
-
-  const size = useWindowSize();
-
-  useEffect(() => {
-    if (size.width < 850) {
-      setParticlesHeight('1200px');
-    } else {
-      setParticlesHeight('700px');
-    }
-  }, [size.width]);
+  const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <Styled.SkillsWrapper width={size.width} id="skills-section">
+    <Styled.SkillsWrapper inView={inView} ref={ref} id="skills-section">
       <Styled.ParticlesWrapper>
         <ParticlesBackground data={data} id="tsparticles-stars" />
       </Styled.ParticlesWrapper>
