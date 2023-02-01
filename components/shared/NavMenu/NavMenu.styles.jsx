@@ -19,6 +19,7 @@ export const NavItems = styled.div`
   display: flex;
   gap: 60px;
   margin-top: -20px;
+  z-index: 999;
   cursor: pointer;
   @media screen and (min-width: 580px) {
     margin-top: 0;
